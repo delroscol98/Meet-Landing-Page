@@ -33,5 +33,29 @@
     &--img {
       overflow: hidden;
     }
+
+    &--heading {
+      padding: 0 2.4rem;
+      margin: 4.8rem 0 2.4rem;
+    }
+
+    &--sub {
+      @include centerHorizontal;
+      padding: 0 2.4rem;
+      width: calc(min(100%, 54rem));
+    }
+
+    &--button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      margin-top: 3.2rem;
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
   }
 }

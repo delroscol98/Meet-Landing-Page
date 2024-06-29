@@ -1,9 +1,13 @@
 .button {
+  border: none;
+  border-radius: 3rem;
   padding: 1.6rem 3rem;
   color: $white;
+  font-weight: 900;
 
   &__1 {
     background-color: $turquoise;
+    transition: all 0.2s;
 
     &:hover {
       background-color: $turquoise-hover;
@@ -16,12 +20,13 @@
 
   &__2 {
     background-color: $purple;
+    transition: all 0.2s;
 
     &:hover {
       background-color: $purple-hover;
     }
 
-    &__version {
+    &--version {
       color: $pink;
     }
   }

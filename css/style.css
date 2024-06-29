@@ -30,7 +30,7 @@ html {
   color: #28283d; }
 
 .heading-1 {
-  font-size: 6.4rem; }
+  font-size: clamp(4rem, 10.667vw, 6.4rem); }
 
 .heading-2 {
   font-size: clamp(4rem, 10.667vw, 4.4rem); }
@@ -41,23 +41,35 @@ html {
   text-transform: uppercase; }
 
 .paragraph {
-  font-size: clamp(1.8rem, 4.8vw, 2.6rem);
-  font-weight: 500; }
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #87879d; }
+  @media screen and (min-width: 45.3125em) {
+    .paragraph {
+      font-size: 1.8rem; } }
+  @media screen and (min-width: 64em) {
+    .paragraph {
+      font-size: clamp(1.8rem, 4.8vw, 2.6rem); } }
 
 .button {
+  border: none;
+  border-radius: 3rem;
   padding: 1.6rem 3rem;
-  color: #fafafa; }
+  color: #fafafa;
+  font-weight: 900; }
   .button__1 {
-    background-color: #4d96a9; }
+    background-color: #4d96a9;
+    transition: all 0.2s; }
     .button__1:hover {
       background-color: #71c0d4; }
     .button__1--version {
       color: #8fe3f9; }
   .button__2 {
-    background-color: #855fb1; }
+    background-color: #855fb1;
+    transition: all 0.2s; }
     .button__2:hover {
       background-color: #b18bdd; }
-    .button__2__version {
+    .button__2--version {
       color: #d9b8ff; }
 
 .header__logo {
@@ -67,7 +79,7 @@ html {
   height: 2.8rem;
   margin-top: 4.8rem;
   margin-bottom: 5.4rem; }
-  @media screen and (min-width: 48em) {
+  @media screen and (min-width: 45.3125em) {
     .header__logo {
       margin-bottom: 6.4rem; } }
   @media screen and (min-width: 64em) {
@@ -84,9 +96,28 @@ html {
     width: 110%;
     display: flex;
     gap: 1.6rem; }
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 45.3125em) {
       .header__hero--img-container {
         width: 106.7%;
         gap: 3.2rem; } }
   .header__hero--img {
     overflow: hidden; }
+  .header__hero--heading {
+    padding: 0 2.4rem;
+    margin: 4.8rem 0 2.4rem; }
+  .header__hero--sub {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 2.4rem;
+    width: calc(min(100%, 54rem)); }
+  .header__hero--button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 3.2rem; }
+    @media screen and (min-width: 45.3125em) {
+      .header__hero--button-container {
+        flex-direction: row;
+        justify-content: center; } }
