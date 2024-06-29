@@ -5,19 +5,34 @@ html {
   font-family: "Red Hat Display", sans-serif;
 }
 
+.heading-1,
+.heading-2,
+.overline,
+.paragraph {
+  text-align: center;
+}
+
+.heading-1,
+.heading-2,
+.overline {
+  font-weight: 900;
+}
+
+.heading-1,
+.heading-2 {
+  color: $navy;
+}
+
 .heading-1 {
   font-size: 6.4rem;
-  font-weight: 900;
 }
 
 .heading-2 {
   font-size: clamp(4rem, 10.667vw, 4.4rem);
-  font-weight: 900;
 }
 
 .overline {
   font-size: clamp(1.6rem, 4.267vw, 2.6rem);
-  font-weight: 900;
   letter-spacing: 0.4rem;
   text-transform: uppercase;
 }
