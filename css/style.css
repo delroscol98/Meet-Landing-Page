@@ -14,17 +14,29 @@ html {
   font-size: 62.5%;
   font-family: "Red Hat Display", sans-serif; }
 
-.heading-1 {
-  font-size: 6.4rem;
+.heading-1,
+.heading-2,
+.overline,
+.paragraph {
+  text-align: center; }
+
+.heading-1,
+.heading-2,
+.overline {
   font-weight: 900; }
 
+.heading-1,
 .heading-2 {
-  font-size: clamp(4rem, 10.667vw, 4.4rem);
-  font-weight: 900; }
+  color: #28283d; }
+
+.heading-1 {
+  font-size: 6.4rem; }
+
+.heading-2 {
+  font-size: clamp(4rem, 10.667vw, 4.4rem); }
 
 .overline {
   font-size: clamp(1.6rem, 4.267vw, 2.6rem);
-  font-weight: 900;
   letter-spacing: 0.4rem;
   text-transform: uppercase; }
 
@@ -32,8 +44,49 @@ html {
   font-size: clamp(1.8rem, 4.8vw, 2.6rem);
   font-weight: 500; }
 
-.button-1 {
+.button {
   padding: 1.6rem 3rem;
-  color: white; }
-  .button-1--version {
-    color: #d9b8ff; }
+  color: #fafafa; }
+  .button__1 {
+    background-color: #4d96a9; }
+    .button__1:hover {
+      background-color: #71c0d4; }
+    .button__1--version {
+      color: #8fe3f9; }
+  .button__2 {
+    background-color: #855fb1; }
+    .button__2:hover {
+      background-color: #b18bdd; }
+    .button__2__version {
+      color: #d9b8ff; }
+
+.header__logo {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  height: 2.8rem;
+  margin-top: 4.8rem;
+  margin-bottom: 5.4rem; }
+  @media screen and (min-width: 48em) {
+    .header__logo {
+      margin-bottom: 6.4rem; } }
+  @media screen and (min-width: 64em) {
+    .header__logo {
+      margin-top: 8rem;
+      margin-bottom: 6.1rem; } }
+
+.header__hero {
+  overflow: hidden; }
+  .header__hero--img-container {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 110%;
+    display: flex;
+    gap: 1.6rem; }
+    @media screen and (min-width: 48em) {
+      .header__hero--img-container {
+        width: 106.7%;
+        gap: 3.2rem; } }
+  .header__hero--img {
+    overflow: hidden; }

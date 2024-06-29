@@ -15,4 +15,23 @@
       margin-bottom: 6.1rem;
     }
   }
+
+  &__hero {
+    overflow: hidden;
+    &--img-container {
+      @include centerHorizontal;
+      width: 110%;
+      display: flex;
+      gap: 1.6rem;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 106.7%;
+        gap: 3.2rem;
+      }
+    }
+
+    &--img {
+      overflow: hidden;
+    }
+  }
 }
