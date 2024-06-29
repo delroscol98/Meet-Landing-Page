@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 *,
 *::after,
 *::before {
@@ -5,9 +6,34 @@
   padding: 0;
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   min-height: 100vh;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif; }
+
+.heading-1 {
+  font-size: 6.4rem;
+  font-weight: 900; }
+
+.heading-2 {
+  font-size: clamp(4rem, 10.667vw, 4.4rem);
+  font-weight: 900; }
+
+.overline {
+  font-size: clamp(1.6rem, 4.267vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: clamp(1.8rem, 4.8vw, 2.6rem);
+  font-weight: 500; }
+
+.button-1 {
+  padding: 1.6rem 3rem;
+  color: white; }
+  .button-1--version {
+    color: #d9b8ff; }
