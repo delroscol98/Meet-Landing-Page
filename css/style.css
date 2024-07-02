@@ -33,23 +33,25 @@ html {
   color: #28283d; }
 
 .heading-1 {
-  font-size: clamp(4rem, 10.667vw, 6.4rem); }
+  font-size: clamp(4rem, 10.667vw, 6.4rem);
+  line-height: 1; }
 
 .heading-2 {
-  font-size: clamp(4rem, 10.667vw, 4.4rem); }
+  font-size: clamp(3.2rem, 8.533vw, 4rem);
+  line-height: calc(44 / 40); }
 
 .overline {
   font-size: clamp(1.6rem, 4.267vw, 2.6rem);
   letter-spacing: 0.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #4d96a9;
+  line-height: calc(26 / 16); }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 2.083vw, 1.8rem);
   font-weight: 500;
-  color: #87879d; }
-  @media screen and (min-width: 48em) {
-    .paragraph {
-      font-size: 1.8rem; } }
+  color: #87879d;
+  line-height: calc(26 / 18); }
 
 .number {
   position: relative;
@@ -103,6 +105,17 @@ html {
     .button__2--version {
       color: #d9b8ff; }
 
+.features {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: calc(min(87.2vw, 54rem)); }
+  .features .heading-2 {
+    margin: 2.4rem 0 3.2rem; }
+    @media screen and (min-width: 29.6875em) {
+      .features .heading-2 {
+        margin: 1.6rem 0 3.2rem; } }
+
 .header {
   overflow: hidden; }
   .header__logo {
@@ -143,7 +156,7 @@ html {
           order: 0;
           grid-column: 2 / 3; } }
     .header__hero--heading {
-      padding: 0 2.4rem;
+      padding: 0 3.4rem;
       margin: calc(4.8rem - 1.6rem) 0 2.4rem; }
     .header__hero--sub {
       position: relative;
@@ -166,17 +179,20 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
-  padding: 0 2.4rem; }
+  padding: 0 2.4rem;
+  margin-bottom: 6.4rem; }
   @media screen and (min-width: 29.6875em) {
     .images {
       grid-template-columns: repeat(4, 1fr);
       gap: 1.1rem;
-      padding: 0 4rem; } }
+      padding: 0 4rem;
+      margin-bottom: 4.8rem; } }
   @media screen and (min-width: 64em) {
     .images {
       grid-template-columns: repeat(4, 1fr);
       gap: 3rem;
-      padding: 0 16.5rem; } }
+      padding: 0 16.5rem;
+      margin-bottom: 8rem; } }
   .images__img {
     width: 100%;
     border-radius: 0.8rem; }

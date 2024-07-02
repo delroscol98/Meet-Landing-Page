@@ -29,24 +29,25 @@ html {
 
 .heading-1 {
   font-size: clamp(4rem, 10.667vw, 6.4rem);
+  line-height: 1;
 }
 
 .heading-2 {
-  font-size: clamp(4rem, 10.667vw, 4.4rem);
+  font-size: clamp(3.2rem, 8.533vw, 4rem);
+  line-height: calc(44 / 40);
 }
 
 .overline {
   font-size: clamp(1.6rem, 4.267vw, 2.6rem);
   letter-spacing: 0.4rem;
   text-transform: uppercase;
+  color: $turquoise;
+  line-height: calc(26 / 16);
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 2.083vw, 1.8rem);
   font-weight: 500;
   color: $grey;
-
-  @media screen and (min-width: $bp-tablet) {
-    font-size: 1.8rem;
-  }
+  line-height: calc(26 / 18);
 }
