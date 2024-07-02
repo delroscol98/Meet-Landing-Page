@@ -51,6 +51,37 @@ html {
     .paragraph {
       font-size: 1.8rem; } }
 
+.number {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #87879d;
+  border: 1px solid rgba(135, 135, 157, 0.45);
+  border-radius: 50%;
+  width: 5.6rem;
+  height: 5.6rem;
+  display: grid;
+  place-items: center; }
+  .number__container {
+    margin: 6.4rem 0; }
+    @media screen and (min-width: 29.6875em) {
+      .number__container {
+        margin: 8rem 0 6.7rem; } }
+    @media screen and (min-width: 48em) {
+      .number__container {
+        margin: 11rem 0 6.4rem; } }
+    .number__container::before {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      content: "";
+      display: block;
+      width: 1px;
+      height: 8.4rem;
+      border: 0.5px solid rgba(135, 135, 157, 0.45); }
+
 .button {
   border: none;
   border-radius: 3rem;
