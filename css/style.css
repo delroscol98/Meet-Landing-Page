@@ -161,3 +161,22 @@ html {
         .header__hero--button-container {
           flex-direction: row;
           justify-content: center; } }
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  padding: 0 2.4rem; }
+  @media screen and (min-width: 29.6875em) {
+    .images {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.1rem;
+      padding: 0 4rem; } }
+  @media screen and (min-width: 64em) {
+    .images {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      padding: 0 16.5rem; } }
+  .images__img {
+    width: 100%;
+    border-radius: 0.8rem; }
