@@ -9,31 +9,26 @@
   height: 5.6rem;
   display: grid;
   place-items: center;
+  background-color: $white;
 
   &__container {
-    margin: 6.4rem 0;
+    margin-top: 6.4rem;
 
     @media screen and (min-width: $bp-phone) {
-      margin: 8rem 0 6.7rem;
+      margin-top: 8rem;
     }
 
     @media screen and (min-width: $bp-tablet) {
-      margin: 11rem 0 6.4rem;
+      margin-top: 11rem;
     }
 
     &::before {
       @include centerHorizontal;
       content: "";
       display: block;
-      width: 1px;
+      width: 0.5px;
       height: 8.4rem;
       border: 0.5px solid rgba($grey, 0.45);
     }
-  }
-
-  &-1 {
-  }
-
-  &-2 {
   }
 }
